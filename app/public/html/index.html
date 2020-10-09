@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleground States</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="local stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="..\js\create.js"></script>
+    <!-- <script src="..\js\combat.js"></script>
+    <script src="..\js\battle.js"></script> -->
+</head>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            alert("jQuery is working perfectly.");
+        });      
+    });
+    </script>
+<body>
+    <main>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <a class="navbar-brand" href="" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Main</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Fight</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">High Scores</a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
+        <br>
+        <div class="container">
+            <div class="Battle text-center">
+                <h1 href="https://fontmeme.com/call-of-duty-black-ops-iii-font/"><img
+                        src="https://fontmeme.com/permalink/200926/025178428799a46f326e2de14f58908d.png"
+                        alt="call-of-duty-black-ops-iii-font" border="0"></h1>
+            </div>
+            <div class="pyw">
+                <h2>Prepare Your Warrior</h2>
+                <input id="warrior" type="text"> </input>
+            </div>
+            <br>
+            <br>
+            <div class="stats">
+                <!--This is "30 points for warior strength-->
+                <h2>10 Points to Distribute to your Battler</h2>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <p>
+                        <label>Attack</label>
+                        <select id="attack">
+                            <option value=0>0</option>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Defense</label>
+                        <select id="defense">
+                            <option value=0>0</option>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Damage</label>
+                        <select id="damage">
+                            <option value=0>0</option>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Speed</label>
+                        <select id="speed">
+                            <option value=0>0</option>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <div class="d-flex justify-content-center">
+        <a href="/view"><type="button" class="btn btn-secondary btn-lg" id="createHero" >Fight!</a>
+    </div>
+</html>

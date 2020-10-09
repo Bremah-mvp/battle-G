@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="local stylesheet" href="./css/battle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="..\js\battle.js"></script>
+    <link ref='https://fonts.googleapis.com/css?family=Ceviche+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/fight.js"></script>
+</head>
+
+<body>
+    
+    <div class="container"></div>
+        <div class="title">
+            <h1>Battle!</h1>
+        </div>
+    </div>
+   
+<!--This button begins the fight-->
+<button onclick="testFight()" class="block">FIGHT!</button>
+
+<div class="container">
+        <div class="main">
+            <div class="ryu">
+                <div class="ryu-still"></div>
+                <div class="ryu-ready"></div>
+                <div class="ryu-throwing"></div>
+                <div class="ryu-cool"></div>
+                <div class="easteregg"></div>
+            </div>
+            <div class="hadouken"></div>
+        </div>
+        <div class="instructions">
+        </div>
+
+       <div class="container">
+            <div class="image">
+                <img src="../assets/zed_white.png" alt="Computer man" style="width:400px;height:400px;">
+            </div>
+        </div>
+        <div class="container">
+            <h2 class = "combat"></h2>
+            <div class = "combat text-danger" id="combatText">
+                <h2>Combat Log</h2>
+            </div>
+        </div>
+
+        <audio id="hadouken-sound" src="">
+            <audio id="fight-sound" src="">
+    </div>
+    
+   
+    <audio id="hadouken-sound" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/145077/hadouken.mp3">
+        <audio id="fight-sound" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/145077/fight.mp3">
+            <!-- <script>
+                $( "button" ).click(function() {
+                  $( "div.first" ).slideUp( 300 ).delay( 800 ).fadeIn( 400 );
+                  $( "div.second" ).slideUp( 300 ).fadeIn( 400 );
+                });
+                </script> -->
+            
+</body>
+
+</html>
